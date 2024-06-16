@@ -1,0 +1,24 @@
+
+
+@media all and (max-width: 1178px){
+.adaptiv{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap-reverse;
+}
+}
+
+@media all and (max-width: 870px){
+section{
+    width: 100%;
+}
+
+main .container{
+    padding: 30px 20px;
+
+}
+
+}
+
+
+

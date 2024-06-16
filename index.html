@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anahit Style</title>
+	<link rel="stylesheet" href="./src/style.css">
+	<link rel="stylesheet" href="./src/style/player.css">
+	<link rel="stylesheet" href="./src/style/plans.css">
+	<link rel="stylesheet" href="./src/style/tools.css">
+	<link rel="stylesheet" href="./src/style/calendar.css">
+	<link rel="stylesheet" href="./src/style/calculator.css">
+	<link rel="stylesheet" href="./src/style/footer.css">
+	<link rel="stylesheet" href="./src/style/todo.css">
+	<link rel="stylesheet" href="./src/style/main.css">
+	<link rel="stylesheet" href="./src/style/auth.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="auth-block">
+
+	<div class="auth">
+		<form>
+			<h2>Enter your login and password</h2>
+			<input class="login" type="text">
+			<input class="password" type="password">
+			<p></p>
+			<button>Enter</button>
+		</form>
+	</div>
+
+	<header>
+		<div class="container">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+				  <img class="swiper-slide" src="./src/img/Anahit.png"></img>
+				  <img class="swiper-slide" src="./src/img/Anahit1.png"></img>
+				  <img class="swiper-slide" src="./src/img/Anahit2.png"></img>
+				  <img class="swiper-slide" src="./src/img/Anahit3.png"></img>
+				</div>
+			  </div>
+
+              <div class="header__items">ANAHIT STYLE</div>
+			</div>
+	</header>
+
+	<main>
+		<div class="container">
+
+			<div class="row adaptiv">
+
+				<section class="player">
+					<h1>Search video</h1>
+
+					<form class="search__video-form">
+						<input placeholder="What will we look for?" type="text">
+						<button>Search</button>
+
+					</form>
+					<div class="player__search-results">
+
+
+					</div>
+
+					<div class="player__screen">
+
+					</div>
+
+				</section>
+
+				<section class="plans">
+					<h2>My plans</h2>
+
+					<form>
+						<input class="plans__inp" type="text">
+						<button id="add__plans">Add</button>
+					</form>
+
+					<div class="plans__filter">
+						<div class="row">
+							<p class="counter">Your have <span></span> plans!</p>
+
+							<select>
+								<option value="all-todos">All todos</option>
+								<option value="complete">Complete</option>
+								<option value="process">In Process</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="plans__list">
+
+					</div>
+
+
+					<div class="modal">
+						<div class="modal__window">
+							<h5>Change your plan!</h5>
+							<input type="text">
+							<div class="row">
+								<button class="modal__save-btn">Save</button>
+								<button class="modal__cancel-btn">Cancel</button>
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+
+				<section class="tools">
+					<h2>My tools</h2>
+					<div class="tools__container">
+
+						<h3>Calendar</h3>
+
+						<div class="calendar">
+							<div class="header">
+								<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+								<div class="text" data-render="month-year"></div>
+								<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+							</div>
+							<div class="months" data-flow="left">
+								<div class="month month-a">
+									<div class="render render-a"></div>
+								</div>
+								<div class="month month-b">
+									<div class="render render-b"></div>
+								</div>
+							</div>
+						</div>
+
+						<h4>Calculator</h4>
+						<div class="calculator">
+							<div class="calc__display">0</div>
+							<div class="buttons">
+								<button class="calc__btn btn__gray">AC</button>
+								<button class="calc__btn btn__gray">+/-</button>
+								<button class="calc__btn btn__gray">%</button>
+								<button class="calc__btn btn__orange">/</button>
+								<button class="calc__btn">7</button>
+								<button class="calc__btn">8</button>
+								<button class="calc__btn">9</button>
+								<button class="calc__btn btn__orange">*</button>
+								<button class="calc__btn">4</button>
+								<button class="calc__btn">5</button>
+								<button class="calc__btn">6</button>
+								<button class="calc__btn btn__orange">-</button>
+								<button class="calc__btn">1</button>
+								<button class="calc__btn">2</button>
+								<button class="calc__btn">3</button>
+								<button class="calc__btn btn__orange">+</button>
+								<button class="calc__btn zero__btn">0</button>
+								<button class="calc__btn">.</button>
+								<button class="calc__btn">=</button>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="footer__items">
+					<h4>For Anahit from Erik</h4>
+					<p>Website creator Erik Yegnyazaryan</p>
+				</div>
+				<div class="footer__items">
+					<img class="footer__flag" src="src/img/flag.png" alt="flag-am">
+				</div>
+
+				<div class="footer__items">
+					<a href="mailto:erik222333444555@gmail.com">My e-mail: erik222333444555@gmail.com</a>
+				</div>
+
+			</div>
+		</div>
+
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+	<script>
+	  var swiper = new Swiper(".mySwiper", {
+	slidesPerView: "auto",
+	spaceBetween: 0,
+	loop: true,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true,
+	},
+	  })
+	</script>
+
+	<script defer src="./src/script/player.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+		integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script defer src="./src/script/todo.js"></script>
+	<script defer src="./src/script/calculator.js"></script>
+	<script defer src="./src/script/calendar.js"></script>
+	<script defer src="./src/script.js">
+
+
+	</script>
+</body>
+
+</html>

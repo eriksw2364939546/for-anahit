@@ -1,0 +1,128 @@
+.card{
+    padding: 10px;
+}
+
+.card .download{
+background: url("../img/download.png") 0 0 / cover no-repeat;
+color: white;
+border: none;
+width: 40px;
+cursor: pointer;
+}
+.card .shaire{
+    background: url("../img/share.png") 0 0 / cover no-repeat;
+    color: white;
+    border: none;
+    width: 36px;
+    cursor: pointer;
+}
+.card .edit{
+    background: url("../img/edit.png") 0 0 / cover no-repeat;
+   color: white; 
+   border: none;
+   width: 34px;
+   cursor: pointer;
+}
+.card .delete{
+    background: url("../img/del.png") 0 0 / cover no-repeat;
+    color: white;
+    border: none;
+    width: 35px;
+    cursor: pointer;
+}
+
+.card .row{
+    justify-content: start;
+    gap: 13px;
+}
+
+.card p{
+    width: 100%;
+	word-wrap: break-word;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 100dvh; */
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+
+
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.active-modal{
+    z-index: 1;
+    opacity: 1;
+}
+
+.modal__window{
+    text-align: center;
+    max-width: 400px;
+    background-color: rgb(19, 19, 19);
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 250px auto;
+    box-shadow: 1px 1px 15px white;
+    transition: all 0.4s;
+    transform: scale(0.1);
+}
+.modal__window h5{
+    color: white;
+    font-size: 25px;
+}
+
+.active-modal .modal__window{
+    transform: scale(1);
+}
+
+.modal__window input{
+    margin: 15px 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 29px;
+    border: 4px dashed gold;
+    box-shadow: 1px 1px 4px white;
+}
+
+.modal__window button{
+	width: 100%;
+	height: 35px;
+	border-radius: 10px;
+    border: 1px solid gold;
+    background-color: black;
+    font-size: 22px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px black;
+    box-shadow: 3px 3px 15px gold;
+
+}
+
+.modal__window button:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+}
+.modal__window .row{
+    gap: 15px;
+}
+
+.complete-plan{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
